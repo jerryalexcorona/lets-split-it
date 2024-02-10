@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paycheck Splitter Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-container">
+        <!-- Your welcome content here -->
+        <h2>Welcome to My Website!</h2>
+        <p>As a token of gratitude, I'd like to introduce you to the Paycheck Splitter!</p>
+        <p>This free tool helps you divide your paycheck into multiple segments based on the percentages you provide.</p>
+        <p>Create different accounts based on your goals. ex: vacation, house down payment, taxes, gambling, new iphone, everyday spending, etc. Then, decide on a percentage to go into each account based on priority. Modify and play with the percentages to fit your lifestyle. The point is to start saving and get out of financial stress.</p>
+        <p>Splitting my paycheck into different accounts helped me take control of my finances, breaking free from the paycheck-to-paycheck cycle.</p>
+        <p>I believe you can do it too. Let's take the first step towards financial freedom!</p>
+    </div>
+
+    <div id="calculator-container">
+        <!-- Your calculator content here -->
+        <h2>Paycheck Splitter</h2>
+
+        <!-- Step 1: Enter paycheck amount -->
+        <div class="step">
+            <label for="paycheckAmount">Step 1: Enter your paycheck amount: $</label>
+            <input type="number" id="paycheckAmount" placeholder="Enter amount">
+        </div>
+
+        <!-- Step 2: Choose the number of splits -->
+        <div class="step">
+            <label for="numSplits">Step 2: Choose the number of splits (up to 8):</label>
+            <input type="number" id="numSplits" placeholder="Enter number of splits" min="2" max="8">
+        </div>
+
+        <!-- Step 3: Enter percentages for each split -->
+        <div class="step">
+            <label for="percentages">Step 3: Enter the percentages for each split (the remainder will go into the final split):</label>
+            <div id="percentages-container"></div>
+        </div>
+
+        <button onclick="calculatePaycheck()">Calculate</button>
+
+        <!-- Results container -->
+        <div id="results-container"></div>
+        <script src="script.js"></script>
+    </div>
+    
+</body>
+</html>

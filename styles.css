@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#welcome-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+#calculator-container {
+    max-width: 800px; /* Set a maximum width to prevent it from becoming too wide */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#percentages-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#percentages-container input {
+    width: 50px;
+}
+
+#results-container {
+    margin-top: 20px;
+}
+
+.step {
+    margin-top: 10px;
+    text-align: left;
+}
