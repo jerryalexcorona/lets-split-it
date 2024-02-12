@@ -48,3 +48,8 @@ input, button {
     margin-top: 10px;
     text-align: left;
 }
+
+footer {
+    display: block;
+    margin-top: 20px;
+  }
