@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paycheck Splitter Calculator</title>
+    <title>Let's Split It!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="welcome-container">
-        <!-- Your welcome content here -->
-        <h2>Welcome to My Website!</h2>
-        <p>As a token of gratitude, I'd like to introduce you to the Paycheck Splitter!</p>
-        <p>This free tool helps you divide your paycheck into multiple segments based on the percentages you provide.</p>
-        <p>Create different accounts based on your goals. ex: vacation, house down payment, taxes, gambling, new iphone, everyday spending, etc. Then, decide on a percentage to go into each account based on priority. Modify and play with the percentages to fit your lifestyle. The point is to start saving and get out of financial stress.</p>
-        <p>Splitting my paycheck into different accounts helped me take control of my finances, breaking free from the paycheck-to-paycheck cycle.</p>
-        <p>I believe you can do it too. Let's take the first step towards financial freedom!</p>
+        <h2>Welcome to Let's Split It!</h2>
+        <p>I created this tool to help me split my paycheck into several different accounts. Before spending any money, I enter the amount I received. Then, I specify how many accounts to divide it into. Here are the accounts I split it into: rent, travel, taxes, investments, emergencies, donations, savings, and my spending money. If I need to save for something new, like a phone or laptop, I can easily add another split.</p>
+        <p>I know this might seem a bit extreme for some, but you can start with two and increase the splits as needed.</p>
+        <p>Planning a vacation? Need a new car? Saving for a house down payment? Trying to pay off credit card debt? Whatever your goal, simply add another split and allocate money towards it.</p>
+        <p>I made it simple so you can split the total by fixed dollar amounts or percentages. For example, let's say every paycheck I allocate $600 to my first split, which I'll call rent. Then, I set aside $200 in my spending account for daily expenses until the next payday. My third split, named savings, receives 50%, and my fourth split, travel, gets 40%. The remaining amount goes into my final split for donations.</p>
+        <p>It’s that simple.</p>
+        <p>This tool removes the guesswork from budgeting without the need for constant calculations. I can easily see how much is allocated to each split.</p>
+        <p>This tool has completely transformed my financial life, and I want to share it with you. I'd love to hear if it helps you with your finances. Share this tool with your friends and family, because, I believe, we do better when we all do better.</p>
+        <p>Let's take the first step towards a better financial future.</p>
+        <p>...You can also use it to split the bar tab, split the restaurant check, split the birthday gift, or anything else you can think of.</p>
     </div>
 
     <div id="calculator-container">
-        <!-- Your calculator content here -->
-        <h2>Paycheck Splitter</h2>
+        <h2>Let's Split It!</h2>
 
-        <!-- Step 1: Enter paycheck amount -->
+        <!-- Step 1: Enter total amount -->
         <div class="step">
-            <label for="paycheckAmount">Step 1: Enter your paycheck amount: $</label>
-            <input type="number" id="paycheckAmount" placeholder="Enter amount">
+            <label for="totalAmount">Step 1: Enter your total amount: $</label>
+            <input type="number" id="totalAmount" placeholder="Enter amount">
         </div>
 
         <!-- Step 2: Choose the number of splits -->
         <div class="step">
-            <label for="numSplits">Step 2: Choose the number of splits (up to 8):</label>
-            <input type="number" id="numSplits" placeholder="Enter number of splits" min="2" max="8">
+            <label for="numSplits">Step 2: Choose the number of splits (up to 10):</label>
+            <input type="number" id="numSplits" placeholder="Enter number of splits" min="2" max="10">
         </div>
 
-        <!-- Step 3: Enter percentages for each split -->
+        <!-- Step 3: Enter percentages or fixed amounts for each split -->
         <div class="step">
-            <label for="percentages">Step 3: Enter the percentages for each split (the remainder will go into the final split):</label>
-            <div id="percentages-container"></div>
+            <label for="splits">Step 3: Enter the names, percentages or fixed amounts for each split (the remainder will go into the final split):</label>
+            <div id="splits-container"></div>
         </div>
 
-        <button onclick="calculatePaycheck()">Calculate</button>
+        <button onclick="calculateTotal()">Calculate</button>
 
         <!-- Results container -->
         <div id="results-container"></div>
